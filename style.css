@@ -1,0 +1,61 @@
+.form-control img{
+    max-width: 30px;
+    width: 30px;
+    position: absolute;
+    left: 10px;
+}
+
+.logo-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.p-3 h3{
+    font-size: clamp (1.5rem, 1vw, 1rem);
+    font-weight: 600;
+}
+
+
+.nav-txt{
+    color: white;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+.entrar{
+    background-color: white;
+    color: #4D1362;
+    width: 130px;
+    padding: 3px 15px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    border: none;
+}
+
+.cadastrar{
+    background-color: #16022F;
+    color: white;
+    width: 130px;
+    padding: 3px 15px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    border: none;
+}
+
+.cadastrar:hover{
+    background-color: white;
+    color: #16022F;
+    transition: 0.3s ease;
+}
+
+.entrar:hover{
+    background-color: #16022F;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.nav-txt:hover{
+    color: #16022F;
+}
