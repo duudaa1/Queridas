@@ -9,68 +9,66 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header class="p-3">
-        <div class="container">
-            <header class="">
-                <div class="container d-flex align-items-center justify-content-between">
-                    <!-- Menu à esquerda -->
-                    <div class="logo-nav d-flex">
-                        <h3>QueridasTech</h3>
-                    </div>
-            
-                    <!-- Campo de busca centralizado -->
-                    <form class="d-flex mx-auto md-3 form" style="flex-grow: 1; max-width: 300px;">
-                        <input class="form-control input-form bg-transparent" type="search" placeholder="Pesquisar" aria-label="Search">
-                        <a class="btn-form btn-outline-success bg-transparent text-white" type="submit"><img class="img-nav" src="./Assets/icons/search-icon.svg" alt="lupa"></a>
-                    </form>
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <div class="logo-nav d-flex">
+                <h3>QueridasTech</h3>
+            </div>
 
-                    <ul class="nav col-lg-auto me-auto mb-md-0">
-                        <li><a href="./index.html" class="nav-link text-white nav-txt">Sobre</a></li>
-                        <li><a href="./pages/explore/explore.html" class="nav-link nav-txt">Episódios</a></li>
-                    </ul>
+            <!-- Campo de busca -->
+            <form class="d-flex mx-auto md-3 form" style="flex-grow: 1; max-width: 300px; margin-right: 20px;">
+                <input class="form-control input-form bg-transparent" type="search" placeholder="Pesquisar" aria-label="Search">
+                <a class="btn-form btn-outline-success bg-transparent text-white" type="submit">
+                    <img class="img-nav" src="./Assets/icons/search-icon.svg" alt="Lupa">
+                </a>
+            </form>
 
-            
-                    <!-- Botões à direita -->
-                    <div class="text-end">
-                        <button type="button" class="btn me-2 button-nav entrar">Entrar</button>
-                        <button type="button" class="btn button-nav cadastrar">Cadastre-se</button>
-                    </div>
+            <!-- Menu -->
+            <ul class="nav col-lg-auto me-auto mb-md-0">
+                <li><a href="./index.html" class="nav-link text-white nav-txt">Sobre</a></li>
+                <li><a href="./pages/explore/explore.html" class="nav-link nav-txt">Episódios</a></li>
+            </ul>
+
+            <!-- Botões -->
+            <div class="text-end">
+                <button type="button" class="btn me-2 button-nav entrar">Entrar</button>
+                <button type="button" class="btn button-nav cadastrar">Cadastre-se</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="banner">
+            <section class="banner">
+                <div class="banner-content">
+                    <h1>Um Podcast sobre <span><br>Tecnologia da Informação</span></h1>
+                    <p>Texto contando como o QueridasTech surgiu e qual seu propósito, de uma maneira objetiva e curta.</p>
                 </div>
-            </header>
+                <div class="banner-image">
+                    <img src="./Assets/img/LOGO.svg" alt="Microfone colorido">
+                </div>
+            </section>
+        </div>
 
+        <div class="episodes">
+            <div class="up-column"></div>
+            <div class="dow-column"></div>
+        </div>
+        
 
+    </main>
+
+    <footer>
+        <p>&copy; 2024 QueridasTech. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./box-track.js"></script>
 </body>
-<style>
-    .p-3{
-        background-color: #3A208C;
-        color: white;
-        font-family: 'Montserrat';
-    }
-    
-    input.form-control.input-form{
-        background-color: none !important; 
-        border-radius: 0;
-        color: white;
-        border: none;
-        border-bottom: 2px solid white;
-    }
-
-    .form-control::placeholder{
-        color: white;
-        font-family: 'Montserrat';
-    }
-
-    .img-nav{
-        max-width: 25px;
-        width: 25px;
-        margin-left: -30px;
-    }
-
-
-   
-
-</style>
 </html>
