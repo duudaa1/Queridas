@@ -353,6 +353,10 @@ main{
     color: #16022F;
 }
 
+
+
+
+
 @media screen and (max-width: 768px){
     main {
         display: flex;
