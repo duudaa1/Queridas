@@ -318,28 +318,6 @@ main{
     color: #16022F;
 }
 
-.input-login {
-    position: relative;
-}
-
-#password {
-    width: 100%; /* Faz com que o input ocupe toda a largura do contêiner */
-    padding-right: 40px; /* Espaço para o ícone de senha à direita */
-}
-
-#toggle-password {
-    position: absolute; /* Posiciona o ícone em relação ao input */
-    right: 10px; /* Coloca o ícone à direita do campo de input */
-    bottom: 50%; /* Posiciona verticalmente no meio */
-    transform: translateY(-50%); /* Ajusta o ícone para ficar centralizado verticalmente */
-    cursor: pointer; 
-    
-}
-
-/* Estilo do ícone de senha */
-#toggle-password svg path {
-    fill: #4D1362; /* Cor do ícone */
-}
 
 .input-checkbox{
     display: flex;
