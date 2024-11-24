@@ -135,6 +135,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10rem, 0;
 }
 
 .card img {
@@ -350,4 +351,42 @@ main{
 .input-button button:hover{
     background-color: #d9d9d9;
     color: #16022F;
+}
+
+@media screen and (max-width: 768px){
+    main {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .login-body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .visual-carousel, .login-component{
+        max-width: 100vw;
+        width: 100%;
+    }
+
+    .login-component{
+        margin: 20rem, 0;    
+    }
+
+   .card-container{
+    max-height: 300px;
+    height: 100%;
+   }
+
+   .card img{
+    max-width: 210px;
+    width: 100%;
+   }
+
+
+   .title-login{
+    margin-top:20px;
+   }
+
 }
