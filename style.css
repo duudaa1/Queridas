@@ -1,6 +1,6 @@
 body{
     font-family: 'Montserrat';
-    background-color: #3A208C;
+    background-color: #4D1362;
 
 }
 
@@ -11,7 +11,7 @@ body h1,h2,h3, p{
 
 
 header{
-    background-color: #3A208C;
+    background-color: #4D1362  ;
     color: white;
     font-family: 'Montserrat';
 }
@@ -125,7 +125,7 @@ main{
     flex-direction: column;
     /* margin: 0 15rem; */
     gap: 40px;
-    background-color: #3A208C;
+    background-color: #4D1362;
 }
 
 .banner{
