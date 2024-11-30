@@ -64,6 +64,40 @@ header{
     border: none;
 }
 
+.talk-us{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.talk-us a{
+    background-color: #16022F;
+    color: white;
+    width: 180px;
+    padding: 6px 15px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+.talk-us a:hover{
+    background-color: #d9d9d9;
+    color: #16022F;
+    transition: 0.3s ease;
+}
+
+.talk-us i{
+    font-size:clamp(1.5rem, 1vw, 1.5rem);
+}
+
+
+.talk-us i:hover{
+    color: #d9d9d9;
+}
+
 .cadastrar{
     background-color: #16022F;
     color: white;
