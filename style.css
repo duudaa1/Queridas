@@ -272,6 +272,9 @@ main{
     font-family: 'Montserrat';
     justify-content: center;
     align-items: center;
+    max-height: 80px !important;
+    height: 100%;
+    font-size: clamp(1rem, 1vw, 1rem) !important;
 }
 
 
