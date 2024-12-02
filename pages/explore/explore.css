@@ -161,6 +161,8 @@ main{
     align-items: space-between;
     max-width: 100vw;
     width: 100%;
+    max-height: 90vw;
+    height: 100%;
     color: white;
     background-color:#4D1362
 }
@@ -172,10 +174,12 @@ main{
 .first-line{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
     max-width: 100vw;
     width: 100%;
-    justify-content: space-around;
-    align-items: center;
+    max-height: 100vh;
+    height: 100%;
     gap: 5px;
 }
 
@@ -184,6 +188,7 @@ main{
     width: 100%;
     background-color: #16022F;
     padding: 20px;
+    border-radius: 15px;
 }
 
 .body-library img{
@@ -240,79 +245,6 @@ main{
 .accordion-button i, .accordion-button:not(.collapsed)::after, .accordion-button:not(.collapsed)::after, .accordion-button::after {
     color: white !important;
 }
-
-/*audio-box*/
-.audio-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.audio-player {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.album-cover img {
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
-}
-
-.song-info {
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.song-info .artist-name {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.song-info .song-name {
-    font-size: 16px;
-}
-
-.controls {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 20px;
-}
-
-button {
-    background-color: #ff5733;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-
-
-.progress-bar {
-    width: 100%;
-    margin-top: 15px;
-}
-
-.volume-control {
-    margin-top: 20px;
-    width: 100%;
-}
-
-
-
 
 
 /*Last audios*/
@@ -393,6 +325,259 @@ button {
     font-size: clamp(1rem, 1vw, 1rem) !important;
 }
 
+/*audio component*/
+.audio-component{
+    display: flex;
+    flex-direction:column; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    max-width: 100vw;
+    width: 100%;
+    max-height:100vh !important;
+    height: 100% !important;
+
+}
+
+
+.audio-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    gap: 5px;
+    max-width: 100vw;
+    width: 100%;
+    height: auto;
+
+}
+
+
+/*audio-box*/
+.audio-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    height: 440px;
+    background-color: #16022F;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+   
+}
+
+
+.audio-player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #16022F;
+    max-width: 100vw;
+    width: 100%;
+    height: 100%;
+}
+
+.audio-box img{
+    max-width: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.song-info{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+    font-family: 'Montserrat';
+    margin: 10px 0;
+
+}
+
+
+.song-title{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    gap: 5px;
+}
+
+.song-title h3{
+    font-size: clamp(1.3rem, 1vw, 1rem);
+    font-weight: 800;
+    text-align: left;
+    margin-right: 10px;
+}
+
+
+.song-title i{
+    font-size: clamp(1.3rem, 1vw, 1rem);
+    margin-bottom: 2px;
+}
+
+
+.song-title i:hover{
+    color: #d9d9d9;
+    transform: scale(1.2);
+    transition: 0.6s ease;
+}
+
+.song-info p{
+    text-align: left;
+}
+
+.controls{
+    margin:20px 0;
+    display: flex;
+    gap: 10px;
+    max-width: 100vw;
+    width: 100%;
+    justify-content: center;
+}
+
+.controls button{
+    background-color: #16022F;
+    color: white;
+    border: none;
+}
+
+.controls i{
+    font-size: clamp(1.3rem, 1vw, 1rem);
+}
+
+.controls i:hover{
+    color: #d9d9d9;
+}
+
+#play-pause i{
+    font-size: clamp(2.2rem, 1.5vw, 1.5rem);
+    border: 3px solid white;
+    padding: 5px;
+    border-radius:100px
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Remove o estilo padrão */
+    appearance: none;
+    width: 80%; /* Ajuste o tamanho conforme necessário */
+    height: 3px; /* Define a grossura */
+    background: white; /* Cor do fundo da barra */
+    border-radius: 5px; /* Para bordas arredondadas */
+    outline: none;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px; /* Largura do botão */
+    height: 15px; /* Altura do botão */
+    background: white; /* Cor do botão */
+    border-radius: 50%; /* Deixa o botão circular */
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+
+  .volume-container {
+    display: flex;
+    flex-direction: row-reverse; /* Organiza as linhas em coluna */
+    align-items: center; /* Centraliza os itens */
+    gap: 10px; /* Espaço entre as linhas */
+    margin: 10px 0;
+  }
+  
+  #volume-control {
+    width: 150px; /* Ajuste o tamanho do controle */
+    height: 5px; /* Espessura da barra */
+    background: white;
+    border-radius: 5px;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  #volume-control::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #volume-control::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #volume-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: clamp(1.3rem, 1vw, 1rem);
+    color: white;
+  }
+  
+
+  /*audio description*/
+
+  .drescriptions{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    gap: 8px;
+  }
+
+  .audio-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
+    background-color: #16022F;
+    padding: 18px 10px;
+    gap: 20px;
+    border-radius: 10px;
+  }
+
+  .audio-description h3{
+    font-size: clamp(1.3rem, 1vw, 1rem);
+    font-weight: 800;
+    background-color: #4D1362;
+    color: white;
+    width: 150px;
+    padding: 5px 8px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .audio-description p{
+    font-size: clamp(1rem, 1vw, 0.8rem);
+    font-weight: 500;
+    text-align: justify;
+    padding: 10px;
+    margin-left: 20px;
+  }
+
+
+  .audio-transcription{
+    background-color: #16022F;
+    border-radius: 10px;
+    padding: 20px 8px;
+    text-align: justify; 
+  }
+  
 
 @media screen and (max-width: 768px){
     .navbar-responsive{

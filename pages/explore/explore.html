@@ -82,11 +82,11 @@
                   <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header">
-                        <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             <i class="bi bi-heart"></i>  Episódios Curtidos
                         </button>
                       </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                           <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                         </div>
@@ -155,47 +155,67 @@
                   </div>
                 </div>
             </section>
-            <section class="adio-component">
-              <div class="audio-box">
-                <div class="audio-player">
+            <section class="audio-component">
+              <div class="audio-elements">
+                <div class="audio-box">
+                  <div class="audio-player">
                     <!-- Imagem do Álbum -->
                     <div class="album-cover">
-                        <img src="caminho-da-imagem.jpg" alt="Album Cover">
+                      <img src="../../Assets/img/cover-player.svg" alt="Album Cover">
+                    </div>
+                
+                    <!-- Nome do Artista e Música -->
+                    <div class="song-info">
+                      <div class="song-title">
+                        <h3 class="artist-name">EP 02 - INGLÊS</h3>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-share"></i>
+                      </div>
+                      <p class="song-name">Prof. Oscar</p>
+                    </div>
+                
+                    <!-- Controles -->
+                    <div class="controls">
+                      <button id="backward"><i class="bi bi-rewind"></i></button>
+                      <button id="reward-music"><i class="bi bi-caret-left"></i></button>
+                      <button id="play-pause"><i class="bi bi-play"></i></button>
+                      <button id="next-music"> <i class="bi bi-caret-right"></i></button>
+                      <button id="forward"><i class="bi bi-fast-forward"></i></button>
+                    </div>
+                
+                    <!-- Barra de Progresso -->
+                    <input type="range" id="progress-bar" value="0" max="100">
+                    
+                    <!-- Controle de Volume -->
+                    <div class="volume-container">
+                      <input type="range" id="volume-control" value="100" min="0" max="100">
+                      <button id="volume-icon">
+                        <i class="bi bi-volume-up"></i>
+                      </button>
                     </div>
                     
-                    <!-- Nome do Artista e da Música -->
-                    <div class="song-info">
-                        <p class="artist-name">Nome do Artista</p>
-                        <p class="song-name">Nome da Música</p>
-                    </div>
-            
-                    <!-- Controls -->
-                    <div class="controls">
-                        <button class="btn-backward">⏪ 15s</button>
-                        <button class="btn-play">▶️</button>
-                        <button class="btn-forward">⏩ 15s</button>
-                    </div>
-            
-                    <!-- Barra de Progresso -->
-                    <input type="range" class="progress-bar" value="0" step="1" max="100">
-            
-                    <!-- Controle de Volume -->
-                    <div class="volume-control">
-                        <input type="range" class="volume-bar" min="0" max="100" value="100">
-                    </div>
+                  </div>
+                
+                  <!-- Tag de áudio -->
+                  <audio id="audio-player" src="../../Assets/Audio/audio.mp3"></audio>
                 </div>
-            
-                <!-- Áudio -->
-                <audio id="audio-player" src="caminho-do-audio.mp3"></audio>
-            </div>
-            
+                
               
-                <section class="drescritions">
-                  <section class="audio-description">descrição</section>
-                  <section class="audio-description">sobre</section>
-                </section>
-            </setion>
-              <section class="audio-transcription">transcrição</section>
+                
+                  <section class="drescriptions">
+                    <section class="audio-description">
+                      <h3>Descrição</h3>
+                      <p>Aqui haverá uma seção dedicada a apresentar informações detalhadas sobre o conteúdo do episódio. jehdskfkl dsnoisadocacd dshfoidsa aodsioasndc asdhfiasncoç dscodsjnoc sdichds cdshivbasd aidhcoasbdc asodihasocads oihodsihf och oisdjoapna doihoan </p>
+                    </section>
+                    <section class="audio-description">
+                      <h3>Sobre</h3>
+                      <p>Aqui haverá uma seção dedicada a apresentar informações detalhadas sobre o convidado. jehdskfkl dsnoisadocacd dshfoidsa aodsioasndc asdhfiasncoç dscodsjnoc sdichds cdshivbasd aidhcoasbdc asodihasocads oihodsihf och oisdjoapna doihoan </p>
+                    </section>
+                  </section>
+              </div>
+              <section class="audio-transcription">
+                <h4>Aqui vai esta passando a transcrição do epsódio em play no momento dfj kdhavsdf diacda daihcas adskjbka sdkbjasdf akbjcaf sdkbakd o</h4>
+              </section>
             </section>
         </section>
         <section class="sencond-line">
