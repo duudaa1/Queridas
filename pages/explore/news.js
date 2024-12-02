@@ -1,6 +1,6 @@
 // Lista de episódios com informações
 const episodes = [
-    { title: 'EP 03 - DIA-A-DIA NO LAB', link: '#', description: 'Sobre como é o dia-a-dia no Lab de inovação, com', speaker: 'Leonardo Martins', image: '../../Assets/img/ep3.svg', audio: '../../Assets/audio/audio3.mp3' },
+    { title: 'EP 03 - DIA-A-DIA NO LAB', link: '#', description: 'Sobre como é o dia-a-dia no Lab de inovação, com', speaker: 'Leonardo Martins', image: '../../Assets/img/ep3.svg', audio: '../../Assets/audio/audio.mp3' },
     { title: 'EP 04 - EQUIPE MANGUETOWN', link: '#', description: 'Falamos sobre a criação de um projeto que une tecnologia e cultura, com', speaker: 'MangueTown', image: '../../Assets/img/ep4.svg', audio: '../../Assets/audio/audio4.mp3' },
     { title: 'EP 05 - ESTUDANTE EMBARQUE', link: '#', description: 'Falamos sobre o processo e estudo no programa Embarque Digital, com', speaker: 'Felipe', image: '../../Assets/img/ep5.svg', audio: '../../Assets/audio/audio5.mp3' },
 ];
