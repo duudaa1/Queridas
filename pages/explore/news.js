@@ -20,7 +20,7 @@ function createBox(episode) {
                 <div class="box-content">
                     <div class="title-box">
                         <h3>${episode.title}</h3>
-                        <p>${episode.description} <u>${episode.speaker}</u></p>
+                        <p>${episode.description} <u>${episode.speaker}.</u></p>
                     </div>
                 </div>
             </div>
