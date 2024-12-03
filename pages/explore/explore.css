@@ -635,19 +635,17 @@ input[type="range"] {
     font-size: clamp(1rem, 1vw, 1rem) !important;
 }
 
-  
-
-@media screen and (max-width: 768px){
+@media screen  and (max-width: 912px) {
     .navbar-responsive{
         display: flex;
         color: white;
-    }
-    
-    .primary-navbar{
-        display: none !important;
-    }
+     } 
 
-    .navbar-responsive .navbar-brand{
+     .nav-principal{
+        display: none;
+     }
+   
+     .navbar-responsive .navbar-brand{
         color: white;
         font-weight: 800;
         margin-left: 10px;
@@ -674,17 +672,51 @@ input[type="range"] {
         background-color: #16022F;
         color: white;
     }
+   
+     
+   body{
+    display: flex !important;
+    flex-direction: column;
+   }
+   maind
 
-    .body-footer{
-        display: grid;
-        grid-template-columns:  1fr 1fr;
-    }
+   .first-line{
+    display: flex;
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    width: 100vw;
+    width: 100%;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos */
 
-    .copyright{
-        font-size: 0.8rem;
-    }
+    
+   }
 
-    .carousel-inner {
-        flex-direction: column; /* Alinha os itens do carrossel verticalmente em telas menores */
+   .body-library{
+    display: flex;
+    flex-direction: column; 
+   }
+
+
+   .audio-elements{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .body-library{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .body-library,
+    .audio-box {
+        max-width: 100%; /* Faz com que ocupem toda a largura disponível */
+        width: 100%;
     }
+}
+
+  
+
+@media screen and (max-width: 768px){
+   
 }
