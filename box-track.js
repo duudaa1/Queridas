@@ -1,10 +1,10 @@
 // Lista de episódios com informações
 const episodes = [
-    { title: 'EP 01 - EMPREGABILIDADE', link: '#', description: 'Falamos da empregabilidade e tendências do mercado de tecnologia, com', speaker: 'Luana Alves', image: './Assets/img/ep1.svg', audio: './Assets/audio/audio.mp3' },
-    { title: 'EP 02 - INGLÊS', link: '#', description: 'Falamos da importância do inglês para o mercado de tecnologia, com', speaker: 'João Silva', image: './Assets/img/ep2.svg', audio: './Assets/audio/audio2.mp3' },
-    { title: 'EP 03 - DIA-A-DIA NO LAB', link: '#', description: 'Sobre como é o dia-a-dia no Lab de inovação, com', speaker: 'Leonardo Martins', image: './Assets/img/ep3.svg', audio: './Assets/audio/audio3.mp3' },
-    { title: 'EP 04 - EQUIPE MANGUETOWN', link: '#', description: 'Falamos sobre a criação de um projeto que une tecnologia e cultura, com', speaker: 'MangueTown', image: './Assets/img/ep4.svg', audio: './Assets/audio/audio4.mp3' },
-    { title: 'EP 05 - ESTUDANTE EMBARQUE', link: '#', description: 'Falamos sobre o processo e estudo no programa Embarque Digital, com', speaker: 'Felipe', image: './Assets/img/ep5.svg', audio: './Assets/audio/audio5.mp3' },
+    { title: 'EP 01 - O inglês como playground de possibilidades', link: '#', description: 'Nessa conversa abordamos as diversas facetas do inglês de forma divertida e leve, com nosso querido', speaker: 'Prof Oscar', image: './Assets/img/oscar.png', audio: './Assets/audio/oscarcorte.mp3' },
+    { title: 'EP 02 -  Da Programação ao Mestrado', link: '#', description: 'Um papo sobre Embarque Digital, mestrado, hackathons e softwares, com nossa querida', speaker: 'Larissa Albuquerque', image: './Assets/img/larissa.png', audio: './Assets/audio/larissacorte.mp3' },
+    { title: 'EP 03 - Mercado de tecnologia e processos seletivos', link: '#', description: 'Como se destacar em processos seletivos, LinkedIn e trabalhar sua comunicação, com', speaker: 'Luana Alves', image: './Assets/img/luana.png', audio: './Assets/audio/luanacorte.mp3' },
+    { title: 'EP 04 - DIA-A-DIA NO LAB DO PORTO DIGITAL', link: '#', description: 'Em breve disponível em nossa plataforma QueridasTech, com', speaker: 'convidados especiais', image: './Assets/img/ep4.svg', audio: './Assets/audio/audio.mp3' },
+    // { title: 'EP 05 - ESTUDANTE EMBARQUE', link: '#', description: 'Falamos sobre o processo e estudo no programa Embarque Digital, com', speaker: 'Felipe', image: './Assets/img/ep5.svg', audio: './Assets/audio/audio5.mp3' },
 ];
 
 // Seleção das colunas

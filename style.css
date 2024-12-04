@@ -207,7 +207,10 @@ main{
     display: none;
 }
 
-
+.dia-pod{
+    font-weight: 700;
+    color: #4D1362;
+}
 
 
 .box {
